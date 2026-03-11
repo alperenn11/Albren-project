@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Albren - Anasayfa</title>
+    <link rel="icon" type="image/png" href="Logolar/iconlogo.jpg">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <style>
+        .carousel-item:hover{transform: scale(1.05);}
+        .carousel{background: linear-gradient(rgb(255, 196, 0), rgb(204, 156, 0));}
+        .uruncevre:hover{transform: scale(1.02); transition: 1s;}
+        .uruncevre{background: linear-gradient(rgb(204, 156, 0), rgb(255, 196, 0)); border-radius: 25px;}
+        .urunharici:hover{transform: scale(1.02); transition: 1s;}
+        .urunharici{background: linear-gradient(rgb(204, 156, 0), rgb(255, 196, 0)); border-radius: 25px;}
+        .logo:hover{transform: scale(1.05); transition: 1s;}
+        .dropdown-item:active{background-color: rgb(255, 196, 0); color: black;}
+        .yakindaresim:hover{transform: scale(1.10); transition: 1s;}
+        .onsiparis:hover{color: rgb(255, 196, 0); background-color: black; transform: scale(1.05); transition: 1s;}
+        .kulakliklar{background: linear-gradient(green, rgb(0, 54, 0)); border-radius: 25px; color: white;}
+        .oempaket{background: linear-gradient(rgb(24, 18, 0), rgb(170, 130, 0)); border-radius: 25px; color: white;}
+        .wraithurunler{background: linear-gradient(black, purple); border-radius: 25px; color: white;}
+        .tekurun img {width: 100%;height: 220px;object-fit: contain; transition: transform 1s ease;}
+        .tekurun {height: 250px; border-radius: 20px; transition: transform 0.5s ease;}
+        .tekurun img:hover{transform: scale(1.1);   }
+        .tekurun:hover{transform: translateY(5px);box-shadow:0 15px 30px rgba(0,0,0,0.2); transition: 0.5s;}
+        .tekurun h4{display: block; z-index: 15;}
+        .tekurun a{text-decoration: none; color: black;}
+        .urunlerimiz{margin-top: 200px;}
+        .urunlerimiz h1{margin-left: 200px;}
+
+        .navbar2{display: none; position: fixed;}
+        .navbarfixed{display: block; top: 0px; z-index: 5;}
+    </style>
+</head>
+
+
+
+<body class="bg-light">
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous">
+</script>
+
+<div class="container-liquid">
+
+<header class="nav bg-warning" class="color: rgb(255, 196, 0);">
+    <h5 class="h4 p-3 text-dark mx-auto">
+        En yeni ve en iyi ürünler bizim mağazamızda. Buradaysan doğru seçim yaptın.
+    </h5>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-dark px-3 col-12">
+    <div class="container-fluid">
+
+        <a class="navbar-brand logo" href="index.html">
+            <img src="Logolar/asılLogo.PNG" style="width:150px;" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler bg-warning" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+            <ul class="navbar-nav gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="index.html">Anasayfa</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white link-warning"
+                       href="#" data-bs-toggle="dropdown">
+                        Ürünler
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><h1 class="dropdown-header text-warning"><strong>BİLGİSAYAR PARÇALARI</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#anakartlarbolumu">Anakart</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#islemcilerbolumu">İşlemci</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ekrankartlarbolumu">Ekran Kartı</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#ramlerbolumu">Ram</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ssdlerbolumu">Ssd</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#digerparcalarbolumu">Diğer Parçalar</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>ÇEVRE BİRİMLERİ</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#mouselarbolumu">Mouse</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#klavyelerbolumu">Klavye</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#mousepadlerbolumu">Mousepad</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#monitorlerbolumu">Monitör</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>Harici Ürünler</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#hariciParcalar">Harici</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>YAKINDA GELİYOR</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#kulakliklar">Kulaklıklar</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#oempaket">OEM Paketler</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#msiurunler">WRAİTH İşbirliği</a></li>           
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Hakkında.html">Hakkında</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="İletişim.html">İletişim</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Giriş.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="ms-auto ms-lg-3 logo ">
+            <img src="Logolar/sepeticonu.webp" style="width:55px;" alt="Sepet">
+        </a>
+
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-dark px-3 col-12 navbar2" id="navbargoster">
+    <div class="container-fluid">
+
+        <a class="navbar-brand logo" href="index.html">
+            <img src="Logolar/asılLogo.PNG" style="width:150px;" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler bg-warning" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+            <ul class="navbar-nav gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="index.html">Anasayfa</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white link-warning"
+                       href="#" data-bs-toggle="dropdown">
+                        Ürünler
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><h1 class="dropdown-header text-warning"><strong>BİLGİSAYAR PARÇALARI</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#anakartlarbolumu">Anakart</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#islemcilerbolumu">İşlemci</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ekrankartlarbolumu">Ekran Kartı</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#ramlerbolumu">Ram</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ssdlerbolumu">Ssd</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#digerparcalarbolumu">Diğer Parçalar</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>ÇEVRE BİRİMLERİ</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#mouselarbolumu">Mouse</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#klavyelerbolumu">Klavye</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#mousepadlerbolumu">Mousepad</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#monitorlerbolumu">Monitör</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>Harici Ürünler</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#hariciParcalar">Harici</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>YAKINDA GELİYOR</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#kulakliklar">Kulaklıklar</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#oempaket">OEM Paketler</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#msiurunler">WRAİTH İşbirliği</a></li>           
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Hakkında.html">Hakkında</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="İletişim.html">İletişim</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Giriş.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="ms-auto ms-lg-3 logo ">
+            <img src="Logolar/sepeticonu.webp" style="width:55px;" alt="Sepet">
+        </a>
+
+    </div>
+</nav>
+
+<div id="demo"
+     class="carousel slide bg-warning mx-auto my-4 col-10 col-md-10 col-lg-9"
+     style="height:450px; max-height:65vh; border-radius:25px;"
+     data-bs-ride="carousel">
+
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+
+    <div class="carousel-inner" style="height: 100%;">
+
+        <div class="carousel-item active" style="height: 100%;">
+            <a href="Ürünler.html#bilgisayarParcalari" class="text-decoration-none">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 text-center text-md-start" style="height: 100%;">
+                <img src="resimler/BilgisayarParçaları(1).png" alt="Sistem parçaları" width="45%">
+                <p class="h5 text-dark fs-4 fs-md-2 fs-lg-1">
+                    <strong>Sistem parçaları:</strong><br>
+                    Bilgisayar, birden fazla donanımın birlikte çalışmasıyla görevini yerine getirir. 
+                    İşlemci hesaplamaları yönetir, RAM geçici verileri tutarak sistemi hızlandırır. 
+                    Anakart tüm parçaları birbirine bağlarken ekran kartı grafik işlemlerini üstlenir. 
+                    SSD/HDD ise işletim sistemi ve dosyaların kalıcı olarak saklanmasını sağlar.
+                </p>
+            </div>
+            </a>
+        </div>
+
+        <div class="carousel-item" style="height: 100%;">
+             <a href="Ürünler.html#bilgisayarParcalari" class="text-decoration-none">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 text-center text-md-start" style="height: 100%;">
+                <img src="resimler/islemciamdpng.png" alt="İşlemci" style="width:30%">
+                <p class="h5 text-dark fs-3 fs-md-2 fs-lg-1">
+                    <strong>İşlemci (CPU):</strong><br>
+                    Bilgisayarın beynidir ve tüm hesaplamaları gerçekleştirir. 
+                    Çok çekirdekli ve yüksek saat hızına sahip bir işlemci, çoklu 
+                    görevlerde ve oyunlarda daha hızlı ve stabil performans sunar. 
+                    Uygulamalara, oyunlara ve profesyonel iş yüklerine göre işlemci 
+                    seçimi büyük önem taşır.
+                </p>
+            </div>
+            </a>
+        </div>
+
+        <div class="carousel-item" style="height: 100%;">
+            <a href="Ürünler.html#bilgisayarParcalari" class="text-decoration-none">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 text-center text-md-start" style="height: 100%;">
+                <img src="resimler/5090gpu.png" alt="Ekran Kartı" style="width:40%">
+                <p class="h5 text-dark fs-3 fs-md-2 fs-lg-1">
+                    <strong>Ekran Kartı (GPU):</strong><br>
+                    Ekran kartı, grafik işlemlerinin hesaplandığı bileşendir. 
+                    Oyun, video düzenleme, 3D modelleme ve yapay zeka uygulamaları 
+                    için güçlü bir GPU şarttır. Bellek (VRAM) kapasitesi ve mimari yapısı, 
+                    ekran kartının performansını doğrudan etkiler.
+                </p>
+            </div>
+            </a>
+        </div>
+
+        <div class="carousel-item" style="height: 100%;">
+            <a href="Ürünler.html#bilgisayarParcalari" class="text-decoration-none">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 text-center text-md-start" style="height: 100%;">
+                <img src="resimler/asusanakart.png" alt="Anakart" style="width:25%">
+                <p class="h5 text-dark fs-3 fs-md-2 fs-lg-1">
+                    <strong>Anakart:</strong><br>
+                    Anakart, bilgisayar parçalarının birbirine bağlandığı ana 
+                    devre kartıdır. İşlemci, RAM, ekran kartı ve depolama birimlerinin 
+                    uyumlu çalışmasını sağlar. Seçeceğiniz anakartın işlemci soketi, 
+                    RAM desteği ve genişleme yuvaları sistemin gelecekteki yükseltme 
+                    potansiyelini belirler.
+                </p>
+            </div>
+            </a>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<div class="container-fluid uruntanitim col-12 row justify-content-center gap-5 mx-auto">
+    <div class="uruncevre col-10 col-sm-10 col-md-8 col-lg-4 flex-column flex-md-row align-items-center text-center text-md-start">
+        <a href="Ürünler.html#cevreBirimleri" class="text-decoration-none">
+            <img src="resimler/cevrebirimleri.png" class="d-block mx-auto" width="350px" alt="cevrebirimleri">
+            <h1 class="text-center text-dark fs-3 fs-md-2 fs-lg-1">ÇEVRE BİRİMLERİ</h1>
+        </a>
+    </div>
+    
+    <div class="urunharici col-10 col-sm-10 col-md-8 col-lg-4 flex-column flex-md-row align-items-center text-center text-md-start">
+        <a href="Ürünler.html#hariciBirimler" class="text-decoration-none">
+            <img src="resimler/hariciparcalar.png" class="d-block mx-auto" width="350px" alt="cevrebirimleri">
+            <h1 class="text-center text-dark fs-3 fs-md-2 fs-lg-1">HARİCİ PARÇALAR</h1>
+        </a>
+    </div>
+</div>
+
+<div class="urunlerimiz container-fluid col-12 justify-content-center gap-5 mx-auto ">
+    <h1>ÜRÜNLERİMİZ</h1>
+    <div class="sira1 row text-center justify-content-center">
+        <div class="tekurun urunanakart col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#anakartlarbolumu"><img src="kullanılmayanresimler/anakart.png" alt="Anakartlar"><h4>Anakartlar</h4></a></div>
+        <div class="tekurun urunislemci col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#islemcilerbolumu"><img src="kullanılmayanresimler/islemci.png" alt="İşlemciler"><h4>İşlemci</h4></a></div>
+        <div class="tekurun urunekrankarti col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#ekrankartlarbolumu"><img src="resimler/5090gpu.png" alt="Ekrankartlar"><h4>Ekran kartı</h4></a></div>
+        <div class="tekurun urunram col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#ramlerbolumu"><img src="resimler/gskill ram.webp" alt="Ramler"><h4>Ram</h4></a></div>
+        <div class="tekurun urunssd col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#ssdlerbolumu"><img src="resimler/samsungssd.png" alt="Ssdler"><h4>Ssd</h4></a></div>
+
+    </div>  
+
+    <div class="sira2 row text-center justify-content-center mt-5">
+        <div class="tekurun urunkasa col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#digerparcalarbolumu"><img src="kullanılmayanresimler/oempaket.png" alt="Kasalar"><h4>Diğer Parçalar</h4></a></div>
+        <div class="tekurun urunmouse col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#mouselarbolumu"><img src="Kullanılacak resimler/Mouse.webp"><h4>Mouse</h4></a></div>
+        <div class="tekurun urunklavye col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#klavyelerbolumu"><img src="Kullanılacak resimler/Klavye.webp" alt="Klavyeler"><h4>Klavye</h4></a></div>
+        <div class="tekurun urunmousepad col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#mousepadlerbolumu"><img src="resimler/blackmousepad.png" alt="Mousepadler"><h4>Mousepad</h4></a></div>
+        <div class="tekurun urunmonitor col-5 col-lg-4 col-xl-3 col-xxl-2 d-flex flex-column"><a href="Ürünler.html#monitorlerbolumu"><img src="Kullanılacak resimler/monitör.webp" alt="Monitörler"><h4>Monitör</h4></a></div>
+    </div>
+
+</div>
+
+<div class="yakinda container-fluid col-12 mt-5" style="height: auto;">
+    <h1 class="mt-5 mb-5 text-center">YAKINDA GELİYOR</h1>
+
+    <div class="wraithurunler mx-auto col-lg-10 d-flex flex-column flex-xl-row align-items-center justify-content-center mt-5" id="msiurunler" style="height: auto;">
+        <div class="yakindaresim my-auto col-12 col-lg-6 mt-5">
+            <img src="resimler/msiurunler.png" style="max-height: 100%;" class="d-block img-fluid" alt="">
+        </div>
+        <div class="yazilar my-auto text-center text-xl-start col-12 col-lg-6 fs-5 fs-md-4 fs-lg-3">
+            <h2 class="">WRAİTH İŞBİRLİĞİ</h2>
+            <p class="mt-5">
+                <strong>WRAİTH</strong> ürünleri artık mağazamızda!
+                Yüksek performanslı WRAİTH ürünleri, güvenilir kalite ve güçlü bileşenleriyle
+                sisteminizi bir üst seviyeye taşımak isteyen kullanıcılar için ideal bir seçim sunar.
+            </p>
+            <a href="#" class="onsiparis btn btn-warning mx-auto mb-5">Ön Sipariş</a>
+        </div>
+    </div>
+
+    <div class="kulakliklar mx-auto col-lg-10 d-flex flex-column flex-xl-row align-items-center justify-content-center mx-auto mt-5" id="kulakliklar" style="height: auto;">
+        <div class="yakindaresim my-auto col-12 col-lg-6">
+            <img src="resimler/kulakliklar.png" style="max-height: 100%;" class="d-block img-fluid" alt="">
+        </div>
+        <div class="yazilar my-auto text-center text-xl-start col-12 col-lg-6 fs-5 fs-md-4 fs-lg-3">
+            <h2 class="">RAZER BLACKSHARK KULAKLIKLAR</h2>
+            <p class="mt-5">
+                <strong>Razer BlackShark</strong> kulaklık, hafif yapısı ve üstün ses kalitesiyle özellikle oyuncular için tasarlanmıştır.
+                Net mikrofonu sayesinde takım iletişimini güçlendirir, güçlü bass ve dengeli tizlerle oyun içindeki her detayı duymanızı sağlar.
+                Uzun süreli kullanımlarda bile konfor sunan yapısıyla rekabetçi oyunlar için ideal bir seçimdir.
+            </p>
+            <a href="#" class="onsiparis btn btn-warning mx-auto mb-5">Ön Sipariş</a>
+        </div>
+    </div>
+
+    <div class="oempaket mx-auto col-lg-10 d-flex flex-column flex-xl-row align-items-center justify-content-center mt-5" id="oempaket" style="height: auto;">
+        <div class="yakindaresim my-auto col-12 col-lg-6">
+            <img src="resimler/OEMPAKET.png" style="max-height: 100%;" class="d-block img-fluid" alt="">
+        </div>
+        <div class="yazilar my-auto text-center text-xl-start col-12 col-lg-6 fs-5 fs-md-4 fs-lg-3">
+            <h2 class="">OEM PAKETLER</h2>
+            <p class="mt-5">
+                <strong>OEM Paket</strong>, RTX 4060 / 5060 ekran kartları ve AMD Ryzen 5 7500F – Ryzen 7 7800X3D gibi güçlü donanımlar için
+                tercih edilen, kutu ve ekstra aksesuar içermeyen ekonomik bir satış seçeneğidir.
+                Performanstan ödün vermeden sistem toplamak isteyenler için idealdir.
+            </p>
+            <a href="#" class="onsiparis btn btn-warning mx-auto mb-5">Ön Sipariş</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="bg-light p-5 text-center fs-3 fs-md-2 fs-lg-1">
+    <h1 class="display-1">SİTEMİZE HOŞGELDİNİZ.</h1>
+
+    <p class="h3 p-5">
+        Bu sitede bilgisayar parçaları ve çevre birimleri hakkında detaylı bilgilere ulaşabilir,<br>
+        ayrıca PlayStation 5, gamepad gibi harici ürünleri inceleyerek güvenle satın alabilirsiniz.
+    </p>
+
+    <p class="container h2 p-5">
+        Yukarıda bulunan <strong>Anasayfa</strong> butonu ile bu sayfaya,
+        <strong>Ürünler</strong> butonu ile mevcut ürünlerimize,
+        <strong>Hakkında</strong> butonu ile sitemiz hakkında bilgilere,
+        <strong>İletişim</strong> butonu ile iletişim bilgilerimize,
+        <strong>Giriş</strong> butonu ile ise sitemiz üzerinde üyelik oluşturma sayfasına ulaşabilirsiniz.
+    </p>
+</div>
+
+
+
+<h5 class="container mt-5 fs-5 fs-md-4 fs-lg-3">Web developer : Alperen TOPTAŞ</h5>
+
+
+
+<footer class="container-fluid bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+
+        <div class="col-md-4 d-flex align-items-center">
+            <img src="resimler/asılLogo.PNG" class="bg-dark" width="50" alt="">
+            <span class="ms-2 text-muted">
+                © 2025 Albren I.T, A.Ş.
+            </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-center">
+            <li class="nav-item"><a href="index.html" class="nav-link text-muted link-dark">Anasayfa</a></li>
+            <li class="nav-item"><a href="Ürünler.html" class="nav-link text-muted link-dark">Ürünler</a></li>
+            <li class="nav-item"><a href="Hakkında.html" class="nav-link text-muted link-dark">Hakkında</a></li>
+            <li class="nav-item"><a href="İletişim.html" class="nav-link text-muted link-dark">İletişim</a></li>
+            <li class="nav-item"><a href="Giriş.html" class="nav-link text-muted link-dark">Giriş</a></li>
+        </ul>
+
+        <ul class="nav col-md-4 justify-content-end mx-auto">
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Twitter</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Instagram</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Facebook</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Youtube</a></li>
+        </ul>
+
+        <div class="col-12 text-center mt-3 text-muted">
+            <strong>İletişim:</strong> +90 555 555 55 55 <br> <strong>E-Posta:</strong>  destek@albrenpc.com
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous">
+</script>
+
+</body>
+</html>

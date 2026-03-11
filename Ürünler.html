@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Albren - Ürünler</title>
+    <link rel="icon" type="image/png" href="resimler/iconlogo.jpg">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <style>
+        .logo:hover { transform: scale(1.05); transition: 1s; }
+        .urun img:hover{transform: scale(1.05); transition: 1s;}
+        .urun a:hover{color: rgb(255, 196, 0); background-color: black; transform: scale(1.02); transition: 1s;}
+        .dropdown-item:active{background-color: rgb(255, 196, 0); color: black;}
+        .logo-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+
+            mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                black 15%,
+                black 85%,
+                transparent 100%
+            );
+
+            -webkit-mask-image: linear-gradient(
+                to right,
+                transparent 0%,
+                black 15%,
+                black 85%,
+                transparent 100%
+            );
+        }
+
+        .logolar {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        .sepetimiz{
+            color: white;
+            border-radius: 50px;
+            width: 30px;
+            position: absolute;
+            right: 5px;
+        }
+
+        .navbar2{display: none; position: fixed;}
+
+        .navbarfixed{display: block; top: 0px; z-index: 5;}
+        .bolumler{height: 1px;}
+    </style>
+</head>
+
+<body style="background-color: rgb(240, 240, 240);">
+
+
+<header class="nav bg-warning">
+    <h5 class="h4 p-3 text-dark mx-auto text-center">
+        En yeni ve en iyi ürünler bizim mağazamızda. Buradaysan doğru seçim yaptın.
+    </h5>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-dark px-3 col-12">
+    <div class="container-fluid">
+
+        <a class="navbar-brand logo" href="index.html">
+            <img src="Logolar/asılLogo.PNG" style="width:150px;" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler bg-warning" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+            <ul class="navbar-nav gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="index.html">Anasayfa</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white link-warning"
+                       href="#" data-bs-toggle="dropdown">
+                        Ürünler
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><h1 class="dropdown-header text-warning"><strong>BİLGİSAYAR PARÇALARI</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#anakartlarbolumu">Anakart</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#islemcilerbolumu">İşlemci</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ekrankartlarbolumu">Ekran Kartı</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#ramlerbolumu">Ram</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ssdlerbolumu">Ssd</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#digerparcalarbolumu">Diğer Parçalar</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>ÇEVRE BİRİMLERİ</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#mouselarbolumu">Mouse</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#klavyelerbolumu">Klavye</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#mousepadlerbolumu">Mousepad</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#monitorlerbolumu">Monitör</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>Harici Ürünler</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#hariciParcalar">Harici</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>YAKINDA GELİYOR</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#kulakliklar">Kulaklıklar</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#oempaket">OEM Paketler</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#msiurunler">WRAİTH İşbirliği</a></li>           
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Hakkında.html">Hakkında</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="İletişim.html">İletişim</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Giriş.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="ms-auto ms-lg-3 logo ">
+            <img src="Logolar/sepeticonu.webp" style="width:55px;" alt="Sepet">
+        </a>
+        <h3 class="px-2 my-auto sepetimiz sifir" id="sifir">0</h3>
+
+
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-dark px-3 col-12 navbar2" id="navbargoster">
+    <div class="container-fluid">
+
+        <a class="navbar-brand logo" href="index.html">
+            <img src="Logolar/asılLogo.PNG" style="width:150px;" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler bg-warning" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+            <ul class="navbar-nav gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="index.html">Anasayfa</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white link-warning"
+                       href="#" data-bs-toggle="dropdown">
+                        Ürünler
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><h1 class="dropdown-header text-warning"><strong>BİLGİSAYAR PARÇALARI</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#anakartlarbolumu">Anakart</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#islemcilerbolumu">İşlemci</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ekrankartlarbolumu">Ekran Kartı</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#ramlerbolumu">Ram</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#ssdlerbolumu">Ssd</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#digerparcalarbolumu">Diğer Parçalar</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>ÇEVRE BİRİMLERİ</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#mouselarbolumu">Mouse</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#klavyelerbolumu">Klavye</a></li>
+                        <li><a class="dropdown-item text-white  link-dark" href="Ürünler.html#mousepadlerbolumu">Mousepad</a></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#monitorlerbolumu">Monitör</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>Harici Ürünler</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="Ürünler.html#hariciParcalar">Harici</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h1 class="dropdown-header text-warning"><strong>YAKINDA GELİYOR</strong></h1></li>
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#kulakliklar">Kulaklıklar</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#oempaket">OEM Paketler</a></li> 
+                        <li><a class="dropdown-item text-white link-dark" href="index.html#msiurunler">WRAİTH İşbirliği</a></li>           
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Hakkında.html">Hakkında</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="İletişim.html">İletişim</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fs-5 text-white  link-warning" href="Giriş.html">Giriş</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="ms-auto ms-lg-3 logo ">
+            <img src="Logolar/sepeticonu.webp" style="width:55px;" alt="Sepet">
+        </a>
+        <h3 class="px-2 my-auto sepetimiz sifir" id="sifir">0</h3>
+
+
+    </div>
+</nav>
+
+<div class="sponsorluk container-fluid">
+    <h1 class="h2 col-12 text-center mt-5">İşbirliklerimizle Türkiye'nin destekçisiyiz!</h1>
+    <div class="logo-container animation text-center col-9 justify-content-center" >
+        <div class="logolar">
+            
+            <img src="Logolar/amdreallogo.png" class="img-fluid mx-5" width="200">
+            <img src="Logolar/atklogo.webp" class="img-fluid mx-5" width="150">
+            <img src="Logolar/logitechlogo.png" class="img-fluid mx-5" width="230">
+            <img src="Logolar/asuslogo.png" class="img-fluid mx-5" width="190">
+            <img src="Logolar/steelserieslogo.png" class="img-fluid mx-5" width="300">
+
+            <img src="Logolar/amdreallogo.png" class="img-fluid mx-5" width="200">
+            <img src="Logolar/atklogo.webp" class="img-fluid mx-5" width="150">
+            <img src="Logolar/logitechlogo.png" class="img-fluid mx-5" width="230">
+            <img src="Logolar/asuslogo.png" class="img-fluid mx-5" width="190">
+            <img src="Logolar/steelserieslogo.png" class="img-fluid mx-5" width="300">
+        </div>
+    </div>   
+</div>
+
+
+<div id="bilgisayarParcalari" class="container-fluid text-dark col-12" style="height: auto;">
+  <h1 class="border-bottom border-3 border-dark justify-content-center mb-5">BİLİSAYAR PARÇALARI</h1>
+
+  <div class="anakartlar row gap-5 justify-content-center"> 
+    <div id="anakartlarbolumu" class="bolumler"></div>
+    <h1 class="text-center mt-5">ANAKART</h1>
+
+        <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/x870eanimev2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/x870eanime.png')">
+                <img src="Anakartlar/x870eanime.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS X870E ANİME</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/z890v2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/z890.png')">
+                <img src="Anakartlar/z890.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS Z890</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/b850blackv2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/b850black.png')">
+                <img src="Anakartlar/b850black.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS B850 BLACK</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/b850whitev2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/b850white.png')">
+                <img src="Anakartlar/b850white.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS B850 WHİTE</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/b650v2.jpg')" onmouseleave="resimgosterme(this, 'Anakartlar/b650.png')">
+                <img src="Anakartlar/b650.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS B650</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/x870blackgigav2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/x870blackgiga.png')">
+                <img src="Anakartlar/x870blackgiga.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GİGABYTE X870</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/b850gigav2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/b850giga.png')">
+                <img src="Anakartlar/b850giga.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GİGABYTE B850</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/x870gigav2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/x870giga.png')">
+                <img src="Anakartlar/x870giga.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GİGABYTE X870</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/b760gigav2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/b760giga.png')">
+                <img src="Anakartlar/b760giga.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GİGABYTE B760</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun anakarturun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Anakartlar/b650gigav2.png')" onmouseleave="resimgosterme(this, 'Anakartlar/b650giga.png')">
+                <img src="Anakartlar/b650giga.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GİGABYTE</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+  </div>
+
+  <div class="islemciler row gap-5 justify-content-center"> 
+    <div id="islemcilerbolumu" class="bolumler"></div>
+    <h1 class="text-center mt-5">İŞLEMCİ</h1>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/5700x3dv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/5700x3d.png')">
+                <img src="İşlemciler/5700x3d.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">R7 5700X3D</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/7500x3dv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/7500x3d.png')">
+                <img src="İşlemciler/7500x3d.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">R5 7500X3D</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/7500x3dv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/7800x3d.png')">
+                <img src="İşlemciler/7800x3d.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">R7 7800X3D</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/9850x3dv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/9950x3d.png')">
+                <img src="İşlemciler/9950x3d.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">R9 9950X3D</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/9850x3dv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/9850x3d.png')">
+                <img src="İşlemciler/9850x3d.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">R7 9850X3D</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/ultra285kv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/ultra285k.png')">
+                <img src="İşlemciler/ultra285k.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">iCore Ultra 9 285K</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/14900kfv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/14900kf.png')">
+                <img src="İşlemciler/14900kf.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">INTEL Core i9 14900KF</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/14600kv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/14600k.png')">
+                <img src="İşlemciler/14600k.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">INTEL Core i5 14600K</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/14400fv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/14400f.png')">
+                <img src="İşlemciler/14400f.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">INTEL Core i5 14400F</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun islemciurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'İşlemciler/14900kfv2.png')" onmouseleave="resimgosterme(this, 'İşlemciler/12400f.png')">
+                <img src="İşlemciler/12400f.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">INTEL Core i5 12400F</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+  </div>
+
+  <div class="ekrankartlar row gap-5 justify-content-center">
+    <div id="ekrankartlarbolumu" class="bolumler"></div>
+    <h1 class="text-center mt-5">EKRAN KARTI</h1>
+
+        <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/asus5080animev2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/asus5080anime.png')">
+                <img src="Ekrankartlar/asus5080anime.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG Astral GeForce RTX 5080</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+        <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/asus5090v2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/asus5090.png')">
+                <img src="Ekrankartlar/asus5090.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG Astral GeForce RTX 5090</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/asus5070v2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/asus5070.png')">
+                <img src="Ekrankartlar/asus5070.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS TUF Gaming GeForce RTX 5070</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/asus5060v2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/asus5060.png')">
+                <img src="Ekrankartlar/asus5060.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS Dual GeForce RTX 5060</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/giga5050v2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/giga5050.png')">
+                <img src="Ekrankartlar/giga5050.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GIGABYTE GeForce RTX 5050</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/giga5080v2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/giga5080.png')">
+                <img src="Ekrankartlar/giga5080.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GIGABYTE GeForce RTX 5080</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/giga5070tiv2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/giga5070ti.png')">
+                <img src="Ekrankartlar/giga5070ti.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GIGABYTE GeForce RTX 5070 Ti</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/msi5090lightningzv2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/msi5090lightningz.png')">
+                <img src="Ekrankartlar/msi5090lightningz.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">MSI GeForce RTX 5090 LIGHTNING Z</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/msi5090v2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/msi5090.png')">
+                <img src="Ekrankartlar/msi5090.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">MSI GeForce RTX 5090 32G</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ekrankartlarurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 430px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ekrankartlar/msi5060tiv2.png')" onmouseleave="resimgosterme(this, 'Ekrankartlar/msi5060ti.png')">
+                <img src="Ekrankartlar/msi5060ti.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">MSI GeForce RTX 5060 Ti 16G</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+  </div>
+
+  <div class="ramler row gap-5 justify-content-center">
+    <div id="ramlerbolumu" class="bolumler"></div>
+    <h1 class="text-center mt-5">RAM</h1>
+
+    <div class="urun ramurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ramler/kingston16v2.png')" onmouseleave="resimgosterme(this, 'Ramler/kingston16.png')">
+                <img src="Ramler/kingston16.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">KİNGSTON 32GB RAM</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ramurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ramler/lexar32v2.png')" onmouseleave="resimgosterme(this, 'Ramler/lexar32.png')">
+                <img src="Ramler/lexar32.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">LEXAR 32GB RAM</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ramurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ramler/gskill48v2.png')" onmouseleave="resimgosterme(this, 'Ramler/gskill48.png')">
+                <img src="Ramler/gskill48.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GSKİLL 48GB RAM</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ramurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ramler/xpg64v2.png')" onmouseleave="resimgosterme(this, 'Ramler/xpg64.png')">
+                <img src="Ramler/xpg64.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">XPG 64GB RAM</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ramurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ramler/gskill64v2.png')" onmouseleave="resimgosterme(this, 'Ramler/gskill64.png')">
+                <img src="Ramler/gskill64.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">GSKİLL 64GB RAM</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+  </div>
+
+  <div class="ssdler row gap-5 justify-content-center mb-5">
+    <div id="ssdlerbolumu" class="bolumler"></div>
+    <h1 class="text-center mt-5">SSD</h1>
+
+        <div class="urun ssdurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ssdler/kingston500gbv2.png')" onmouseleave="resimgosterme(this, 'Ssdler/kingston500gb.png')">
+                <img src="Ssdler/kingston500gb.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">KİNGSTON 500GB</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ssdurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ssdler/kingston1tbv2.png')" onmouseleave="resimgosterme(this, 'Ssdler/kingston1tb.png')">
+                <img src="Ssdler/kingston1tb.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">KİNGSTON 1TB SSD</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ssdurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ssdler/kioxia1tbv2.png')" onmouseleave="resimgosterme(this, 'Ssdler/kioxia1tb.png')">
+                <img src="Ssdler/kioxia1tb.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">KİOXİA 1TB SSD</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ssdurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ssdler/samsung2tbv2.png')" onmouseleave="resimgosterme(this, 'Ssdler/samsung2tb.png')">
+                <img src="Ssdler/samsung2tb.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">SAMSUNG 2TB SSD</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun ssdurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Ssdler/samsung4tbv2.png')" onmouseleave="resimgosterme(this, 'Ssdler/samsung4tb.png')">
+                <img src="Ssdler/samsung4tb.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">SAMSUNG 4TB SSD</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+  </div>
+
+  <div class="digerler row gap-5 justify-content-center mb-5">
+    <div id="digerparcalarbolumu" class="bolumler"></div>
+    <h1 class="text-center mt-5">DİĞER PARÇALAR</h1>
+
+    <h1 class="container col-11 justify-content-center">KASALAR</h1>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asusanimev2.png')" onmouseleave="resimgosterme(this, 'Diger/asusanime.png')">
+                <img src="Diger/asusanime.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG ANİME</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asusrogv2.png')" onmouseleave="resimgosterme(this, 'Diger/asusrog.png')">
+                <img src="Diger/asusrog.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG HYPERİON</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asussiyahv2.png')" onmouseleave="resimgosterme(this, 'Diger/asussiyah.png')">
+                <img src="Diger/asussiyah.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG HELİOS II</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/corsairbeyazv2.png')" onmouseleave="resimgosterme(this, 'Diger/corsairbeyaz.png')">
+                <img src="Diger/corsairbeyaz.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">CORSAIR iCUE 5000X</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/thermaltakebeyazv2.png')" onmouseleave="resimgosterme(this, 'Diger/thermaltakebeyaz.png')">
+                <img src="Diger/thermaltakebeyaz.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">THERMALTAKE V380</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <h1 class="container col-11 justify-content-center">SIVI SOĞUTUCULAR</h1>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asussogutucuanimev2.png')" onmouseleave="resimgosterme(this, 'Diger/asussogutucuanime.png')">
+                <img src="Diger/asussogutucuanime.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG ANİME</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asussogutucurogv2.png')" onmouseleave="resimgosterme(this, 'Diger/asussogutucurog.png')">
+                <img src="Diger/asussogutucurog.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG RYUO IV</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asussogutucubeyazv2.png')" onmouseleave="resimgosterme(this, 'Diger/asussogutucubeyaz.png')">
+                <img src="Diger/asussogutucubeyaz.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG STRIX LC </h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/thermaltakesogutucuv2.png')" onmouseleave="resimgosterme(this, 'Diger/thermaltakesogutucu.png')">
+                <img src="Diger/thermaltakesogutucu.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">THERMALTAKE TH360</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/cmsogutucuv2.png')" onmouseleave="resimgosterme(this, 'Diger/cmsogutucu.png')">
+                <img src="Diger/cmsogutucu.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">CM MASTERLİQUİD</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <h1 class="container col-11 justify-content-center">GÜÇ KAYNAKLARI</h1>
+
+        <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asus1200wanimev2.png')" onmouseleave="resimgosterme(this, 'Diger/asus1200wanime.png')">
+                <img src="Diger/asus1200wanime.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG THOR</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asus750wbeyazv2.png')" onmouseleave="resimgosterme(this, 'Diger/asus750wbeyaz11.png')">
+                <img src="Diger/asus750wbeyaz11.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS PRIME-750B</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asus750wsiyahv2.png')" onmouseleave="resimgosterme(this, 'Diger/asus750wsiyah.png')">
+                <img src="Diger/asus750wsiyah.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS 750W 80+</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asusrog1000wv2.png')" onmouseleave="resimgosterme(this, 'Diger/asusrog1000w.png')">
+                <img src="Diger/asusrog1000w.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG THOR</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+
+    <div class="urun digerurun1 bg-light col-10  col-lg-4 col-xxl-2" style=" border-radius: 5px; height: 400px;">
+        <div style="height: 220px; display: flex;" 
+        id="resimhover" onmousemove="resimgoster(this, 'Diger/asusrog1600wv2.png')" onmouseleave="resimgosterme(this, 'Diger/asusrog1600w.png')">
+                <img src="Diger/asusrog1600w.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+        </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ASUS ROG THOR</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="cevreBirimleri" class="container-fluid" style="height: auto;">
+  <h1 class="border-bottom border-3 border-dark">ÇEVRE BİRİMLERİ</h1>
+  <div class="container-fluid row justify-content-center gap-5 my-5">
+
+    <div id="mouselarbolumu" class="bolumler"></div>
+    <h1 class="col-12 text-center">MOUSE</h1>
+    <div class="mouselar row justify-content-center gap-5" style=" border-radius: 5px;">
+
+        <div class="urun wraithw1 col-10 col-lg-5 col-xxl-3 bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Mouselar/w1v2.png')" onmouseleave="resimgosterme(this, 'Mouselar/w1.png')">
+                <img src="Mouselar/w1.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">WRAİTH W1</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun wlmouse col-10 col-lg-5 col-xxl-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Mouselar/wlmousev2.png')" onmouseleave="resimgosterme(this, 'Mouselar/wlmouse.png')">
+                <img src="Mouselar/wlmouse.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">WLMOUSE BEAST X PRO</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun atksky col-10 col-lg-5 col-xxl-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Mouselar/atkskyv2.png')" onmouseleave="resimgosterme(this, 'Mouselar/atksky.png')">
+                <img src="Mouselar/atksky.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ATK BLAZİNG SKY</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun x1 col-10 col-lg-5 col-xxl-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Mouselar/X1v2.png')" onmouseleave="resimgosterme(this, 'Mouselar/X1.png')">
+                <img src="Mouselar/X1.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ATK BLAZİNG SKY X1</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun atka9 col-10 col-lg-5 col-xxl-3 bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Mouselar/a9atk2.png')" onmouseleave="resimgosterme(this, 'Mouselar/atka9png.png')">
+                <img src="Mouselar/atka9png.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ATK DRAGONFLY A9</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun superlight col-10 col-lg-5 col-xxl-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Mouselar/mousesuperlight22.webp')" onmouseleave="resimgosterme(this, 'Mouselar/mousesuperlight.webp')">
+                <img src="Mouselar/mousesuperlight.webp" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">LOGİTECH G PRO X 2</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="klavyelerbolumu" class="bolumler"></div>
+    <h1 class="col-12 text-center">KLAVYE</h1>
+    <div class="container-fluid row justify-content-center gap-5 my-5">
+        <div class="urun w60 col-12 col-lg-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Klavyeler/w60v2.png')" onmouseleave="resimgosterme(this, 'Klavyeler/w60.png')">
+                <img src="Klavyeler/w60.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">WRAİTH W60</h1>
+            <div class="butonlar text-center mt-4">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun w75 col-12 col-lg-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Klavyeler/w75v2.png')" onmouseleave="resimgosterme(this, 'Klavyeler/w75.png')">
+                <img src="Klavyeler/w75.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">WRAİTH W75</h1>
+            <div class="butonlar text-center mt-4">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun mad60 col-12 col-lg-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Klavyeler/mad60v2.png')" onmouseleave="resimgosterme(this, 'Klavyeler/mad60.png')">
+                <img src="Klavyeler/mad60.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">FGG MADLİONS MAD60</h1>
+            <div class="butonlar text-center mt-4">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun madlight col-12 col-lg-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Klavyeler/madlightv2.png')" onmouseleave="resimgosterme(this, 'Klavyeler/madlight.png')">
+                <img src="Klavyeler/madlight.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">FGG MAD LİGHT 60HE</h1>
+            <div class="butonlar text-center mt-4">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun atkrs6 col-12 col-lg-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Klavyeler/atkrs6v2.png')" onmouseleave="resimgosterme(this, 'Klavyeler/atkrs6.png')">
+                <img src="Klavyeler/atkrs6.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">ATK RS6</h1>
+            <div class="butonlar text-center mt-4">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun yunzi col-12 col-lg-3 border-radius bg-light" style="height: 400px; border-radius: 5px;">
+            <div style="height: 220px; display: flex;" 
+            id="resimhover" onmousemove="resimgoster(this, 'Klavyeler/yunziv2.png')" onmouseleave="resimgosterme(this, 'Klavyeler/yunzi.png')">
+                <img src="Klavyeler/yunzi.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">YUNZII YZ75 PRO</h1>
+            <div class="butonlar text-center mt-4">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mousepadlerbolumu" class="bolumler"></div>
+    <h1 class="col-12 text-center">MOUSEPAD</h1>
+    <div class="container-fluid row justify-content-center gap-5 my-5">
+        <div class="urun mousepadsiyah col-12 col-lg-4 border-radius bg-light" style="height: 450px; border-radius: 5px;">
+            <div style="height: 300px; display: flex;">
+                <img src="resimler/blackmousepad.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center fs-3 fs-md-2 fs-lg-1">SteelSeries QcK Medium Siyah</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun mousepadbeyaz col-12 col-lg-4 border-radius bg-light" style="height: 450px; border-radius: 5px;">
+            <div style="height: 300px; display: flex;">
+                <img src="resimler/whitemousepad.webp" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center fs-3 fs-md-2 fs-lg-1">SteelSeries QcK Medium Beyaz</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="monitorlerbolumu" class="bolumler"></div>
+    <h1 class="col-12 text-center">MONİTÖR</h1>
+    <div class="container-fluid row justify-content-center gap-5 my-5">
+        <div class="urun asus1 col-12 col-lg-5 border-radius bg-light" style="height: 450px; border-radius: 5px;">
+            <div style="height: 300px; display: flex;">
+                <img src="resimler/asusv249q1r.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center fs-3 fs-md-2 fs-lg-1">ASUS TUF GAMING VG249Q1R</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun asus2 col-12 col-lg-5 border-radius bg-light" style="height: 450px; border-radius: 5px;">
+            <div style="height: 300px; display: flex;">
+                <img src="resimler/oledmonitor.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center fs-3 fs-md-2 fs-lg-1">ASUS ROG STRIX OLED XG27AQDMG</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun msi col-12 col-lg-5 border-radius bg-light" style="height: 450px; border-radius: 5px;">
+            <div style="height: 300px; display: flex;">
+                <img src="resimler/msimonitor.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center fs-3 fs-md-2 fs-lg-1">MSI MAG 274CXF</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun samsungoled col-12 col-lg-5 border-radius bg-light" style="height: 450px; border-radius: 5px;">
+            <div style="height: 300px; display: flex;">
+                <img src="resimler/samsungoledking.png" style="max-height: 100%;" class="d-block mx-auto img-fluid mt-3" alt="">
+            </div>
+            <h1 class="text-center fs-3 fs-md-2 fs-lg-1">SAMSUNG ODYSSEY OLED G6</h1>
+            <div class="butonlar text-center">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid " style="height: auto;">
+    <div id="hariciParcalar" class="bolumler"></div>
+    <h1 class="border-bottom border-3 border-dark">HARİCİ PARÇALAR</h1>
+    <div class="container-fluid row justify-content-center gap-5 my-5">
+
+    <div class="hariciurunler row justify-content-center gap-5" style=" border-radius: 5px;">
+        <div class="container-fluid row justify-content-center gap-5 mx-auto my-5 col-12">
+
+        <div class="urun playstation col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/ps5.webp" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">PlayStation 5</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun gamepad col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/gamepad.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">Gamepad</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun monitorlight col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/monitorlightpng.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-5 fs-3 fs-md-2 fs-lg-1">Monitör Işığı</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun monitorkol col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/monitorkolu.webp" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-3 fs-3 fs-md-2 fs-lg-1">North Bayou F80 Monitör Kolu</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid row justify-content-center gap-5 mx-auto col-12">
+        <div class="urun mikrofonkolu col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/mikrofonkolu1.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-3 fs-3 fs-md-2 fs-lg-1">Fifine CS1 Mikrofon Kolu</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun fifinehoparlor  col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/fifinehoparlor.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-3 fs-3 fs-md-2 fs-lg-1">Fifine Ampligame A20 Hoparlör</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun logitechwebcam  col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/logitechwebcam1.png" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-3 fs-3 fs-md-2 fs-lg-1">Logitech C922 Webcam</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+
+        <div class="urun playstationvr  col-12  col-lg-4 col-xxl-2 bg-light" style="height: 300px; border-radius: 5px;">
+            <div style="height: 150px; display: flex;">
+                <img src="resimler/vrgozluk.webp" style="max-height: 100%;" class="d-block mx-auto img-fluid" alt="">
+            </div>
+            <h1 class="text-center mt-3 fs-3 fs-md-2 fs-lg-1">PlayStation VR gözlük</h1>
+            <div class="butonlar text-center ">
+                <a href="#" class="btn btn-warning">Satın Al</a>
+                <a href="javascript:void(0)" class="btn btn-warning sepeteekle">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+<h5 class="container mt-5 fs-5 fs-md-4 fs-lg-3">Web developer : Alperen TOPTAŞ</h5>
+
+
+
+<footer class="container-fluid bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+
+        <div class="col-md-4 d-flex align-items-center">
+            <img src="resimler/asılLogo.PNG" class="bg-dark" width="50" alt="">
+            <span class="ms-2 text-muted">
+                © 2025 Albren I.T, A.Ş.
+            </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-center">
+            <li class="nav-item"><a href="index.html" class="nav-link text-muted link-dark">Anasayfa</a></li>
+            <li class="nav-item"><a href="Ürünler.html" class="nav-link text-muted link-dark">Ürünler</a></li>
+            <li class="nav-item"><a href="Hakkında.html" class="nav-link text-muted link-dark">Hakkında</a></li>
+            <li class="nav-item"><a href="İletişim.html" class="nav-link text-muted link-dark">İletişim</a></li>
+            <li class="nav-item"><a href="Giriş.html" class="nav-link text-muted link-dark">Giriş</a></li>
+        </ul>
+
+        <ul class="nav col-md-4 justify-content-end mx-auto">
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Twitter</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Instagram</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Facebook</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted link-dark">Youtube</a></li>
+        </ul>
+
+        <div class="col-12 text-center mt-3 text-muted">
+            <strong>İletişim:</strong> +90 555 555 55 55 <br> <strong>E-Posta:</strong>  destek@albrenpc.com
+        </div>
+    </div>
+</footer>
+
+<script>
+    function resimgoster(element, yeniResim){
+       element.querySelector("img").src=yeniResim;
+    }
+    function resimgosterme(element, eskiResim){
+        element.querySelector("img").src=eskiResim;
+    }
+
+
+    let sonuc = Number(document.querySelector(".sifir").innerHTML);
+    const sepet = document.querySelectorAll(".sepeteekle");
+    const sifirlar = document.querySelectorAll(".sifir");
+
+    sepet.forEach(function(btn){
+        btn.addEventListener("click", function(){
+            sonuc = sonuc + 1;
+
+            sifirlar.forEach(function(el){
+                el.innerHTML = sonuc;
+            });
+        });
+    });
+
+</script>
+
+<script src="script.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
